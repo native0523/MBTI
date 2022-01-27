@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sidemenu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".MainEng">
+
+        <!-- 상단 부분 -->
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/box_white"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/sunflower_b"
+                    android:gravity="center"
+                    android:text="궁합"
+                    android:textColor="@color/main_dark"
+                    android:textSize="60dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAvatar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="20dp"
+                    app:srcCompat="@drawable/ic_heart" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 스크롤뷰 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_white">
+
+            <!-- 컨테이너 -->
+            <LinearLayout
+                android:id="@+id/layoutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 스크롤뷰 왼쪽 여백 -->
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <!-- 내용 들어가는 곳 !! -->
+                    <!-- 1번째 줄 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <!-- INTJ -->
+                        <LinearLayout
+                            android:id="@+id/llIntj"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvIntjTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="INTJ"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvIntjContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ENFP,ENTP"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- INTP -->
+                        <LinearLayout
+                            android:id="@+id/llIntp"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvIntpTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="INTP"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvIntpContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ENTJ,ESTJ"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 2번째 줄 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <!-- ENTJ -->
+                        <LinearLayout
+                            android:id="@+id/llEntj"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEntjTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ENTJ"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvEntjContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="INFP,INTP"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- ENTP -->
+                        <LinearLayout
+                            android:id="@+id/llEntp"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEntpTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ENTP"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvEntpContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="INFJ,INTJ"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 3번째 줄 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <!-- INFJ -->
+                        <LinearLayout
+                            android:id="@+id/llInfj"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvInfjTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="INFJ"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvInfjContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ENFP,ENTP"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- INFP -->
+                        <LinearLayout
+                            android:id="@+id/llInfp"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvInfpTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="INFP"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvInfpContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ENFJ,ENTJ"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 4번째 줄 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <!-- ENFJ -->
+                        <LinearLayout
+                            android:id="@+id/llEnfj"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEnfjTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ENFJ"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvEnfjContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="INFP,ISFP"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- ENFP -->
+                        <LinearLayout
+                            android:id="@+id/llEnfp"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEnfpTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ENFP"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvEnfpContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="INFJ,INTJ"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 5번째 줄 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <!-- ISTJ -->
+                        <LinearLayout
+                            android:id="@+id/llIstj"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvIstjTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ISTJ"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvIstjContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ESFP,ESTP"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- ISFJ -->
+                        <LinearLayout
+                            android:id="@+id/llIsfj"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvIsfjTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ISFJ"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvIsfjContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ESFP,ESTP"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 6번째 줄 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <!-- ESTJ -->
+                        <LinearLayout
+                            android:id="@+id/llEstj"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEstjTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ESTJ"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvEstjContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ISFP,ISTP"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- ESFJ -->
+                        <LinearLayout
+                            android:id="@+id/llEsfj"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEsfjTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ESFJ"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvEsfjContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ISFP,ISTP"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 7번째 줄 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <!-- ISTP -->
+                        <LinearLayout
+                            android:id="@+id/llIstp"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvIstpTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ISTP"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvIstpContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ESFJ,ESTJ"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- ISFP -->
+                        <LinearLayout
+                            android:id="@+id/llIsfp"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvIsfpTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ISFP"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvIsfpContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ENFJ,ESFJ,ESTJ"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 8번째 줄 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <!-- ESTP -->
+                        <LinearLayout
+                            android:id="@+id/llEstp"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEstpTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ESTP"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvEstpContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ISFJ,ISTJ"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- ESFP -->
+                        <LinearLayout
+                            android:id="@+id/llEsfp"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/box_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEsfpTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_underline"
+                                android:fontFamily="@font/sunflower_r"
+                                android:gravity="center"
+                                android:text="ESFP"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tvEsfpContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sunflower_l"
+                                android:gravity="center"
+                                android:text="ISFJ,ISTJ"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 스크롤뷰 오른쪽 여백 -->
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- 하단 메뉴바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/custom_menubar"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+            <!-- 사이드 메뉴 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSidemenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- 홈 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- 뒤로가기 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_green"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_account"></ImageButton>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/activity_drawer"/>-->
+    <include layout="@layout/activity_sidemenu"></include>
+
+</androidx.drawerlayout.widget.DrawerLayout>

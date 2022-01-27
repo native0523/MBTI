@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/main_white"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/sidebar_bg"
+        android:orientation="vertical">
+
+        <!-- Upper Side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8" />
+
+            <!-- Close Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btnClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="40dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_cancel"></ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></Space>
+
+        <!-- Lower Side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8" />
+
+            <!-- Nickname -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9.2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6">
+
+                    <Button
+                        android:id="@+id/btnNickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="닉네임"
+                        android:textColor="@color/main_dark"
+                        android:textSize="35dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4">
+
+                    <TextView
+                        android:id="@+id/tvMbti"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/sunflower_r"
+                        android:gravity="center_vertical"
+                        android:text="ENFP"
+                        android:textColor="@color/main_gray"
+                        android:textSize="15dp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!-- 궁합 -->
+        <Button
+            android:id="@+id/btnMatchSide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_ripple_transparent"
+            android:fontFamily="@font/sunflower_r"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="궁합"
+            android:textColor="@color/main_dark"
+            android:textSize="24dp" />
+
+        <!-- 게임 -->
+        <Button
+            android:id="@+id/btnGameSide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_ripple_transparent"
+            android:fontFamily="@font/sunflower_r"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="게임"
+            android:textColor="@color/main_dark"
+            android:textSize="24dp" />
+
+        <!-- 책 -->
+        <Button
+            android:id="@+id/btnBookSide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_ripple_transparent"
+            android:fontFamily="@font/sunflower_r"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="책"
+            android:textColor="@color/main_dark"
+            android:textSize="24dp" />
+
+        <!-- 유튜브 -->
+        <Button
+            android:id="@+id/btnYoutubeSide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_ripple_transparent"
+            android:fontFamily="@font/sunflower_r"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="유튜브"
+            android:textColor="@color/main_dark"
+            android:textSize="24dp" />
+
+        <!-- 음악 -->
+        <Button
+            android:id="@+id/btnMusicSide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_ripple_transparent"
+            android:fontFamily="@font/sunflower_r"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="음악"
+            android:textColor="@color/main_dark"
+            android:textSize="24dp" />
+
+        <!-- 영화 -->
+        <Button
+            android:id="@+id/btnMovieSide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_ripple_transparent"
+            android:fontFamily="@font/sunflower_r"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="영화"
+            android:textColor="@color/main_dark"
+            android:textSize="24dp" />
+
+        <!-- 드라마 -->
+        <Button
+            android:id="@+id/btnDramaSide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_ripple_transparent"
+            android:fontFamily="@font/sunflower_r"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="드라마"
+            android:textColor="@color/main_dark"
+            android:textSize="24dp" />
+
+        <!-- 직업 -->
+        <Button
+            android:id="@+id/btnJobSide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_ripple_transparent"
+            android:fontFamily="@font/sunflower_r"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="직업"
+            android:textColor="@color/main_dark"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sidemenu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!-- 상단 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llTitle"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/box_white"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/sunflower_b"
+                    android:gravity="center"
+                    android:text="MBTI 추천 앱"
+                    android:textColor="@color/main_dark"
+                    android:textSize="40dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/didimgothic_b"
+                    android:gravity="center"
+                    android:text="MBTI를 선택해주세요"
+                    android:textColor="@color/main_gray"
+                    android:textSize="15dp"></TextView>
+
+            </LinearLayout>
+
+            <!-- MBTI 1번째 줄 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llMbti1"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_red"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="INTJ"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti2"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_yellow"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="INTP"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti3"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_green"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ENTJ"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti4"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_orange"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ENTP"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- MBTI 2번째 줄 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llMbti5"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_orange"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="INFJ"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti6"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_red"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="INFP"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti7"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_yellow"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ENFJ"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti8"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_green"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ENFP"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- MBTI 3번째 줄 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llMbti9"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_green"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ISTJ"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti10"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_orange"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ISFJ"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti11"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_red"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ESTJ"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti12"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_yellow"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ESFJ"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- MBTI 4번째 줄 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llMbti13"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_yellow"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ISTP"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti14"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_green"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ISFP"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti15"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_orange"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ESTP"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMbti16"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnMbti16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_red"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ESFP"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 제작팀 소개 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llAbout"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnAbout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_transparent"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="ABOUT US"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 하단 메뉴바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/custom_menubar"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+            <!-- 사이드 메뉴 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSidemenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- 홈 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- 내 계정 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_account"></ImageButton>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_sidemenu"></include>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

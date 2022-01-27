@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    // 메인 폰트 (제목 등)
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/sunflower_b"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/sunflower_r"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="300"
+        android:font="@font/sunflower_l"/>
+
+    // 서브 폰트 (설명, 텍스트 등)
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/didimgothic_b"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/didimgothic_r"/>
+</font-family>

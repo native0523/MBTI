@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable-v24/box_green.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable-v24/box_white.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/bg_window.xml" value="0.35989583333333336" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/box_green.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/box_orange.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/box_red.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/box_white.xml" value="0.22685185185185186" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/box_yellow.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_avatar.xml" value="0.35846153846153844" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_edittext.xml" value="0.2740740740740741" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_menubar.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_ripple_free.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_ripple_green.xml" value="0.30462962962962964" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_ripple_orange.xml" value="0.30462962962962964" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_ripple_transparent.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_ripple_white.xml" value="0.23055555555555557" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_ripple_yellow.xml" value="0.30462962962962964" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/custom_underline.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/dl_background.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_0.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_1.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_10.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_3.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_4.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_5.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_6.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_7.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_8.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_9.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_green.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/drawable/gradient_intro_yellow.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/font/font.xml" value="0.37395833333333334" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/about_dialog.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/activity_account.xml" value="0.25" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/activity_intro.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/activity_main.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/activity_nickname.xml" value="0.33" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/activity_profile.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/activity_sidebar.xml" value="0.32155797101449274" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/activity_sidemenu.xml" value="0.31657608695652173" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/basic_dialog.xml" value="0.32155797101449274" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/book_all.xml" value="0.33" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/drama_all.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/game_all.xml" value="0.33" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/job_all.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_enfj.xml" value="0.3432971014492754" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_enfp.xml" value="0.31657608695652173" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_entj.xml" value="0.25" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_entp.xml" value="0.25" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_esfj.xml" value="0.1" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_esfp.xml" value="0.31476449275362317" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_estj.xml" value="0.1" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_estp.xml" value="0.31476449275362317" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_infj.xml" value="0.1" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_infp.xml" value="0.1" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_intj.xml" value="0.25" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_intp.xml" value="0.25" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_isfj.xml" value="0.1" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_isfp.xml" value="0.31476449275362317" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_istj.xml" value="0.1" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/layout_istp.xml" value="0.22" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/main_dialog.xml" value="0.25" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/match_all.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/mate_all.xml" value="0.33" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/movie_all.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/music_all.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/profile_dialog.xml" value="0.33" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/profilesave_dialog.xml" value="0.33" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/test_dialog.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/layout/youtube_all.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3640625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/mipmap-anydpi-v26/ic_launcher_mbti.xml" value="0.20625" />
+        <entry key="..\:/Android/MBTI/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3640625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

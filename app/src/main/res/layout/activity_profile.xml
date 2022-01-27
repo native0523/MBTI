@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sidemenu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!-- 상단 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llTitle"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/box_white"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/sunflower_b"
+                    android:gravity="center"
+                    android:text="프로필 변경하기"
+                    android:textColor="@color/main_dark"
+                    android:textSize="30dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/didimgothic_b"
+                    android:gravity="center"
+                    android:text="변경하실 닉네임과 MBTI를 입력해주세요."
+                    android:textColor="@color/main_gray"
+                    android:textSize="15dp"></TextView>
+
+            </LinearLayout>
+
+            <!-- 변경 전 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llBefore"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBeforeNick1"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/sunflower_b"
+                            android:gravity="center"
+                            android:text="현재 닉네임: "
+                            android:textColor="@color/main_dark"
+                            android:textSize="25dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvBeforeNick2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/sunflower_l"
+                            android:gravity="center"
+                            android:text="제이슨"
+                            android:textColor="@color/main_dark"
+                            android:textSize="25dp"></TextView>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"></Space>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBeforeMbti1"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/sunflower_b"
+                            android:gravity="center"
+                            android:text="현재 MBTI: "
+                            android:textColor="@color/main_dark"
+                            android:textSize="25dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvBeforeMbti2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/sunflower_l"
+                            android:gravity="center"
+                            android:text="ENFP"
+                            android:textColor="@color/main_dark"
+                            android:textSize="25dp"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 변경 후 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llAfter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/box_white"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAfterNick"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/sunflower_b"
+                            android:gravity="center"
+                            android:text="변경할 닉네임: "
+                            android:textColor="@color/main_dark"
+                            android:textSize="23dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/etAfterNick"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/sunflower_l"
+                            android:gravity="center"
+                            android:hint="닉네임"
+                            android:textAlignment="center"
+                            android:textColor="@color/main_dark"
+                            android:textSize="20dp"></EditText>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"></Space>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAfterMbti"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/sunflower_b"
+                            android:gravity="center"
+                            android:text="변경할 MBTI: "
+                            android:textColor="@color/main_dark"
+                            android:textSize="23dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/etAfterMbti"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/sunflower_l"
+                            android:gravity="center"
+                            android:hint="MBTI"
+                            android:textAlignment="center"
+                            android:textColor="@color/main_dark"
+                            android:textSize="20dp"></EditText>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 버튼 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llSetup"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/box_white"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnSetup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_red"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="설정"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSave"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/box_white"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_ripple_yellow"
+                        android:fontFamily="@font/sunflower_b"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="저장"
+                        android:textColor="@color/main_dark"
+                        android:textSize="20dp"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 하단 메뉴바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/custom_menubar"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+            <!-- 사이드 메뉴 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSidemenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- 홈 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- 내 계정 버튼 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_account"></ImageButton>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_sidemenu"></include>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
