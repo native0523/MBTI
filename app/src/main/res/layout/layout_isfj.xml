@@ -131,7 +131,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/sunflower_l"
                                 android:gravity="center"
-                                android:text="INFJ, INTJ"
+                                android:text="ESFP, ESTP"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"></TextView>
 
@@ -167,7 +167,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/sunflower_l"
                                 android:gravity="center"
-                                android:text="동물의 숲"
+                                android:text="마인크래프트"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"></TextView>
 
@@ -210,7 +210,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/sunflower_l"
                                 android:gravity="center"
-                                android:text="시작도 끝도 없는 \n 모험 (모험)"
+                                android:text="(신화) \n 그리스 로마 신화"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"></TextView>
 
@@ -246,7 +246,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/sunflower_l"
                                 android:gravity="center"
-                                android:text="보고싶진아"
+                                android:text="속삭이는 몽자"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"></TextView>
 
@@ -289,7 +289,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/sunflower_l"
                                 android:gravity="center"
-                                android:text="Troye Sivan - YOUTH"
+                                android:text="Lauv - I Like Me Better"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"></TextView>
 
@@ -332,7 +332,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/sunflower_l"
                                 android:gravity="center"
-                                android:text="버닝"
+                                android:text="러브 액츄얼리"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"></TextView>
 
@@ -368,7 +368,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/sunflower_l"
                                 android:gravity="center"
-                                android:text="도깨비"
+                                android:text="뷰티 인사이드"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"></TextView>
 
@@ -412,7 +412,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/sunflower_l"
                                 android:gravity="center"
-                                android:text="디자이너, 시나리오 작가, PD"
+                                android:text="행정 보조원, 신용 상담가, 인사 관리자"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"></TextView>
 
